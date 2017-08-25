@@ -58,7 +58,6 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 [_LOWER] = KEYMAP( \
   KC_TILD, KC_EXLM, KC_AT,   KC_HASH, KC_DLR,  KC_PERC, KC_CIRC, KC_AMPR,    KC_ASTR,    KC_LPRN, KC_RPRN, KC_BSPC, \
   KC_DEL,  _______,  _______,_______, _______, _______, KC_HOME, KC_PGDOWN,  KC_PGUP,    KC_END,  _______, KC_PIPE, \
-  _______, _______, _______, _______, _______, _______, _______, _______,    _______,    _______, _______, _______, \
   _______, _______, _______, _______, _______, _______, _______, S(KC_NUHS), S(KC_NUBS), _______, _______, ______,  \
   _______, _______, _______, _______, _______, _______, _______, _______,    KC_WREF,    KC_WSTP, KC_WBAK, KC_WFWD  \
 ),
