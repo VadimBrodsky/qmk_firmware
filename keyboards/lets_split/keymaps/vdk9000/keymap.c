@@ -48,7 +48,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * ,-----------------------------------------------------------------------------------.
  * |   ~  |   !  |   @  |  #   |  $   |   %  |      |      |      |      |      | Bksp |
  * |------+------+------+------+------+-------------+------+------+------+------+------|
- * |      |   ^  |   &  |  *   |  (   |   )  | Home |PgDown| PgUp | End  |      |  |   |
+ * |TmuxPr|   ^  |   &  |  *   |  (   |   )  | Home |PgDown| PgUp | End  |      |  |   |
  * |------+------+------+------+------+------|------+------+------+------+------+------|
  * |      |   -  |   =  |      |  [   |   ]  |      |ISO ~ |ISO | |      |      |      |
  * |------+------+------+------+------+------+------+------+------+------+------+------|
@@ -56,10 +56,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * `-----------------------------------------------------------------------------------'
  */
 [_LOWER] = KEYMAP( \
-  KC_TILD, KC_EXLM, KC_AT,   KC_HASH, KC_DLR,  KC_PERC, _______, _______,    _______,    _______, _______, KC_BSPC, \
-  _______, KC_CIRC, KC_AMPR, KC_ASTR, KC_LPRN, KC_RPRN, KC_HOME, KC_PGDOWN,  KC_PGUP,    KC_END,  _______, KC_PIPE, \
-  _______, KC_MINS, KC_EQL,  _______, KC_LBRC, KC_RBRC, _______, S(KC_NUHS), S(KC_NUBS), _______, _______, _______, \
-  _______, _______, _______, _______, _______, _______, _______, _______,    KC_WREF,     KC_WSTP, KC_WBAK, KC_WFWD  \
+  KC_TILD,    KC_EXLM, KC_AT,   KC_HASH, KC_DLR,  KC_PERC, _______, _______,    _______,    _______, _______, KC_BSPC, \
+  LCTL(KC_B), KC_CIRC, KC_AMPR, KC_ASTR, KC_LPRN, KC_RPRN, KC_HOME, KC_PGDOWN,  KC_PGUP,    KC_END,  _______, KC_PIPE, \
+  _______,    KC_MINS, KC_EQL,  _______, KC_LBRC, KC_RBRC, _______, S(KC_NUHS), S(KC_NUBS), _______, _______, _______, \
+  _______,    _______, _______, _______, _______, _______, _______, _______,    KC_WREF,     KC_WSTP, KC_WBAK, KC_WFWD  \
 ),
 
 /* Raise
