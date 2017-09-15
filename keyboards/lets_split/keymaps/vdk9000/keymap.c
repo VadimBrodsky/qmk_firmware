@@ -117,12 +117,25 @@ void matrix_scan_user(void) {
     leading = false;
     leader_end();
 
-    SEQ_ONE_KEY(KC_T){
-      register_code(KC_LCTL);
-      register_code(KC_B);
-      unregister_code(KC_B);
-      unregister_code(KC_LCTL);
-    };
+    // Chrome Back Tab
+    SEQ_TWO_KEYS(KC_C, KC_B) {
+      register_code(KC_LGUI);
+      register_code(KC_LSFT);
+      register_code(KC_LBRC);
+      unregister_code(KC_LBRC);
+      unregister_code(KC_LSFT);
+      unregister_code(KC_LGUI);
+    }
+
+    // Chrome Next Tab
+    SEQ_TWO_KEYS(KC_C, KC_N) {
+      register_code(KC_LGUI);
+      register_code(KC_LSFT);
+      register_code(KC_RBRC);
+      unregister_code(KC_RBRC);
+      unregister_code(KC_LSFT);
+      unregister_code(KC_LGUI);
+    }
   }
 }
 
