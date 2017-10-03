@@ -136,6 +136,16 @@ void matrix_scan_user(void) {
       unregister_code(KC_LSFT);
       unregister_code(KC_LGUI);
     }
+
+    // OSX Lock
+    SEQ_TWO_KEYS(KC_M, KC_L) {
+      register_code(KC_LCTL);
+      register_code(KC_LSFT);
+      register_code(KC_SYSTEM_SLEEP);
+      unregister_code(KC_SYSTEM_SLEEP);
+      unregister_code(KC_LSFT);
+      unregister_code(KC_LCTL);
+    }
   }
 }
 
