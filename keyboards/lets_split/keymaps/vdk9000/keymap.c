@@ -117,26 +117,6 @@ void matrix_scan_user(void) {
     leading = false;
     leader_end();
 
-    // Chrome Back Tab
-    SEQ_TWO_KEYS(KC_C, KC_B) {
-      register_code(KC_LGUI);
-      register_code(KC_LSFT);
-      register_code(KC_LBRC);
-      unregister_code(KC_LBRC);
-      unregister_code(KC_LSFT);
-      unregister_code(KC_LGUI);
-    }
-
-    // Chrome Next Tab
-    SEQ_TWO_KEYS(KC_C, KC_N) {
-      register_code(KC_LGUI);
-      register_code(KC_LSFT);
-      register_code(KC_RBRC);
-      unregister_code(KC_RBRC);
-      unregister_code(KC_LSFT);
-      unregister_code(KC_LGUI);
-    }
-
     // OSX Lock
     SEQ_TWO_KEYS(KC_M, KC_L) {
       register_code(KC_LCTL);
@@ -145,6 +125,16 @@ void matrix_scan_user(void) {
       unregister_code(KC_SYSTEM_SLEEP);
       unregister_code(KC_LSFT);
       unregister_code(KC_LCTL);
+    }
+
+    // OSX Screenshot
+    SEQ_TWO_KEYS(KC_M, KC_S) {
+      register_code(KC_LSFT);
+      register_code(KC_LALT);
+      register_code(KC_4);
+      unregister_code(KC_4);
+      unregister_code(KC_LALT);
+      unregister_code(KC_LSFT);
     }
   }
 }
