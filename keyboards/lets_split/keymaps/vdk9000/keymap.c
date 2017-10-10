@@ -134,10 +134,10 @@ void matrix_scan_user(void) {
     // OSX Lock
     SEQ_TWO_KEYS(KC_M, KC_L) {
       register_code(KC_LCTL);
-      register_code(KC_LSFT);
-      register_code(KC_SYSTEM_SLEEP);
-      unregister_code(KC_SYSTEM_SLEEP);
-      unregister_code(KC_LSFT);
+      register_code(KC_LALT);
+      register_code(KC_Q);
+      unregister_code(KC_Q);
+      unregister_code(KC_LALT);
       unregister_code(KC_LCTL);
     }
 
