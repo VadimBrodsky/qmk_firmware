@@ -150,6 +150,14 @@ void matrix_scan_user(void) {
       unregister_code(KC_LALT);
       unregister_code(KC_LSFT);
     }
+
+    // OSX Screenshot
+    SEQ_TWO_KEYS(KC_M, KC_V) {
+      register_code(KC_LALT);
+      register_code(KC_F5);
+      unregister_code(KC_F5);
+      unregister_code(KC_LALT);
+    }
   }
 }
 
