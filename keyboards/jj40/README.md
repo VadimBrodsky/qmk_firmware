@@ -1,10 +1,7 @@
 jj40 keyboard firmware
 ==========================
 
-This is a port of the QMK firmware for boards that are based on the
-ps2avrGB firmware, like the [ps2avrGB
-keyboard](https://www.keyclack.com/product/gb-ps2avrgb/) or the ones sold
-by [Winkeyless](http://winkeyless.kr/product/ps2avrgb-parts/).
+This is a port of the QMK firmware for boards that are based on the ps2avrGB firmware.
 
 Note that this is a complete replacement for the firmware, so you won't be
 using Bootmapper Client to change any keyboard settings, since not all the
@@ -40,7 +37,7 @@ in the bootloader:
 
 ```
 $ make jj40
-$ bootloadHID -r ps2avrGB_default.hex
+$ bootloadHID -r jj40_default.hex
 ```
 
 ## Troubleshooting
