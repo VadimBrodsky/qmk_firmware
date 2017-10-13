@@ -1,4 +1,4 @@
-ps2avrGB keyboard firmware
+jj40 keyboard firmware
 ==========================
 
 This is a port of the QMK firmware for boards that are based on the
@@ -9,12 +9,6 @@ by [Winkeyless](http://winkeyless.kr/product/ps2avrgb-parts/).
 Note that this is a complete replacement for the firmware, so you won't be
 using Bootmapper Client to change any keyboard settings, since not all the
 USB report options are supported.
-
-## Supported Boards
-
-Only the [B.mini X2](http://winkeyless.kr/product/b-mini-x2-pcb/) has been
-tested so far (since it's the only one I own). But other boards that use
-the ps2avrGB firmware should work as well.
 
 ## Installing
 
@@ -37,7 +31,7 @@ Then, with the keyboard plugged in, simply run this command from the
 `qmk_firmware` directory:
 
 ```
-$ make ps2avrGB-program
+$ make jj40-program
 ```
 
 If you prefer, you can just build it and flash the firmware directly with
@@ -45,7 +39,7 @@ If you prefer, you can just build it and flash the firmware directly with
 in the bootloader:
 
 ```
-$ make ps2avrGB
+$ make jj40
 $ bootloadHID -r ps2avrGB_default.hex
 ```
 
