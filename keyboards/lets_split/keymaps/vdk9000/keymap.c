@@ -9,12 +9,14 @@ extern keymap_config_t keymap_config;
 // Layer names don't all need to be of the same length, obviously, and you can also skip them
 // entirely and just use numbers.
 #define _QWERTY 0
+#define _COLEMAK 1
 #define _LOWER 1
 #define _RAISE 2
 #define _ADJUST 16
 
 enum custom_keycodes {
   QWERTY = SAFE_RANGE,
+  COLEMAK,
   LOWER,
   RAISE,
   ADJUST,
@@ -116,10 +118,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * `-----------------------------------------------------------------------------------'
  */
 [_ADJUST] =  KEYMAP( \
-  RESET,   KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,   KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,  KC_DEL,  \
-  _______, KC_F11,  KC_F12,  _______, _______, _______, _______, _______, _______, _______,_ ______, QWERTY,  \
-  _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, COLEMAK, \
-  _______, _______, _______, _______, _______, _______, _______, AU_ON,   AU_OFF,  AG_NORM, AG_SWAP, _______  \
+  RESET,   KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,   KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,  KC_DEL,   \
+  _______, KC_F11,  KC_F12,  _______, _______, _______, _______, _______, _______, _______, _______,  QWERTY,  \
+  _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______,  COLEMAK, \
+  _______, _______, _______, _______, _______, _______, _______, AU_ON,   AU_OFF,  AG_NORM, AG_SWAP, _______   \
 )
 
 };
