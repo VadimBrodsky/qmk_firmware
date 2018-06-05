@@ -59,15 +59,15 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * ,-----------------------------------------.                                         ,-----------------------------------------.
  * | Esc  |   Q  |   W  |   E  |   R  |   T  |                                         |   Y  |   U  |   I  |   O  |   P  | Bksp |
  * |------+------+------+------+------+------|      ,---------------------------.      |------+------+------+------+------+------|
- * | Ctl  |   A  |   S  |   D  |   F  |   G  |      | Tab  |  GUI |      |Leader|      |   H  |   J  |   K  |   L  |   ;  |  '   |
+ * | Tab  |   A  |   S  |   D  |   F  |   G  |      |      | GUI  | Enter|Leader|      |   H  |   J  |   K  |   L  |   ;  |  '   |
  * |------+------+------+------+------+------+------+------+------+------+------+------+------+------+------+------+------+------|
- * | Shift|   Z  |   X  |   C  |   V  |   B  |Lower | Alt  | Spc  | Spc  | Enter| Raise|   N  |   M  |   ,  |   .  |   /  |Shift |
+ * | Shift|   Z  |   X  |   C  |   V  |   B  |Lower | Alt  | Spc  | Spc  |  Ctl  | Raise|   N  |   M  |   ,  |   .  |   /  |Shift |
  * `-----------------------------------------------------------------------------------------------------------------------------'
  */
   [_QWERTY] = KEYMAP( \
     KC_ESC,  KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,                                                          KC_Y,    KC_U,    KC_I,    KC_O,      KC_P,    KC_BSPC, \
-    KC_LCTL, KC_A,    KC_S,    KC_D,    KC_F,    KC_G,             KC_TAB,  KC_LGUI, _______, KC_LEAD,          KC_H,    KC_J,    KC_K,    KC_L,      KC_SCLN, KC_QUOT, \
-    KC_LSPO, KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,    LOWER,   KC_LALT, KC_SPC,  KC_SPC,  KC_ENT,   RAISE,  KC_N,    KC_M,    KC_COMM, KC_DOT,    KC_SLSH, KC_RSPC  \
+    KC_TAB,  KC_A,    KC_S,    KC_D,    KC_F,    KC_G,             _______,   KC_LGUI,   KC_ENT, KC_LEAD,         KC_H,    KC_J,    KC_K,    KC_L,      KC_SCLN, KC_QUOT, \
+    KC_LSPO, KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,   LOWER,    KC_LALT,   KC_SPC,  KC_SPC, KC_LCTL,  RAISE, KC_N,    KC_M,    KC_COMM, KC_DOT,    KC_SLSH, KC_RSPC  \
   ),
 
 /* Lower
